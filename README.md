@@ -17,8 +17,24 @@ NOTE: We use yarn for package manager
    ```sh
    git clone git@github.com:bildeneins/todo-app.git
    ```
+
 1. From within the repository directory, run:
+
    ```sh
    yarn
    yarn dev
+   ```
+
+### Build
+
+1. Build web app
+
+   ```sh
+   yarn build
+   ```
+
+1. Build electron app using electron-forge
+
+   ```sh
+   yarn package
    ```
