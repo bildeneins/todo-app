@@ -1,6 +1,7 @@
 import path from 'path';
 import { BrowserWindow, app } from 'electron';
 
+
 // hot reload on development mode
 if (process.env.NODE_ENV === 'development') {
   require('electron-reload')(__dirname, {
@@ -13,10 +14,14 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
-
-// create BrowserWindow instance
 app.whenReady().then(() => {
-  new BrowserWindow().loadFile('dist/index.html')
+  // create BrowserWindow instance
+  new BrowserWindow({
+    webPreferences: {
+      contextIsolation: true,
+      nodeIntegration: false
+    }
+  }).loadFile('dist/index.html');
 });
 
 
