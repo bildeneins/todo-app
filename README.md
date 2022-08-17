@@ -7,7 +7,7 @@ NOTE: We use yarn for package manager
 
 ### Requirements
 
-- node >= 12
+- node >= 16
 - yarn
 
 ### Run locally on your machine
