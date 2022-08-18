@@ -1,5 +1,7 @@
 import path from 'path';
 import { BrowserWindow, app } from 'electron';
+import { fork } from 'child_process';
+
 
 // hot reload on development mode
 if (process.env.NODE_ENV === 'development') {
@@ -12,6 +14,10 @@ if (process.env.NODE_ENV === 'development') {
     ),
   });
 }
+
+
+// run backend process
+fork(path.join(__dirname, '/backend/app.js'));
 
 
 // create BrowserWindow instance
