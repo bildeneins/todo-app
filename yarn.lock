@@ -638,6 +638,13 @@
   resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/sqlite3@^3.1.8":
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/@types/sqlite3/-/sqlite3-3.1.8.tgz#e64310c5841fc01c1a8795d960d951e4cf940296"
+  integrity sha512-sQMt/qnyUWnqiTcJXm5ZfNPIBeJ/DVvJDwxw+0tAxPJvadzfiP1QhryO1JOR6t1yfb8NpzQb/Rud06mob5laIA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/yauzl@^2.9.1":
   version "2.10.0"
   resolved "https://registry.npmjs.org/@types/yauzl/-/yauzl-2.10.0.tgz"
